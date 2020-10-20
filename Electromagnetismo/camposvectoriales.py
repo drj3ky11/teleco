@@ -1,6 +1,5 @@
 #===============
-#  AA1 Electromagnetismo, semiconductores y ondas 
-#  José Luis Pére Manzano
+#  Representación de campos vectoriales
 #===============
 
 import matplotlib.pyplot as plt
@@ -9,7 +8,7 @@ import matplotlib.cm as cm
 import numpy as np
 
 #=====================
-#  First Exercice AA1
+#  First Exercice
 #=====================
 fig = plt.figure('Apartado 1')
 
@@ -58,7 +57,7 @@ ax.quiver(X, Y, U, V, color='y')
 
 
 #=====================
-#  Second Exercice AA1
+#  Second Exercice
 #=====================
 fig2 = plt.figure('Apartado 2')
 #  First subplot 2.a)
@@ -75,7 +74,7 @@ F= (X+2*Y);
 ax2.quiver(X, Y, F, U, V, W, color='r')
 
 #=====================
-#  Third Exercice AA1
+#  Third Exercice
 #=====================
 # Make the grid 
 X, Y = np.meshgrid(np.arange(-3, 3, 0.2),
@@ -111,7 +110,7 @@ ax3.set_title('Gradient plot')
 
 
 #=====================
-#  Fourth Exercice AA1
+#  Fourth Exercice
 #=====================
 f = Y**2 - X**2
 (fx,fy)=np.gradient(f)
